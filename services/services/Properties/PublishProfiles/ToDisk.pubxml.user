@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/content/css/app.css">
+      <publishTime>10/06/2013 15:13:27</publishTime>
+    </File>
+    <File Include="bin/content/img/angry-santa.jpg">
+      <publishTime>10/06/2013 15:16:49</publishTime>
+    </File>
+    <File Include="bin/content/img/bg.jpg">
+      <publishTime>10/06/2013 15:06:03</publishTime>
+    </File>
+    <File Include="bin/content/img/header.png">
+      <publishTime>10/06/2013 14:58:21</publishTime>
+    </File>
+    <File Include="bin/content/img/santa-thumbs.jpg">
+      <publishTime>10/06/2013 15:17:34</publishTime>
+    </File>
+    <File Include="bin/content/img/santa.jpg">
+      <publishTime>10/06/2013 15:09:11</publishTime>
+    </File>
+    <File Include="bin/content/index.html">
+      <publishTime>10/06/2013 19:28:41</publishTime>
+    </File>
+    <File Include="bin/content/js/app.js">
+      <publishTime>09/25/2013 20:03:37</publishTime>
+    </File>
+    <File Include="bin/content/js/controllers.js">
+      <publishTime>10/06/2013 14:02:41</publishTime>
+    </File>
+    <File Include="bin/content/js/directives.js">
+      <publishTime>09/25/2013 19:43:52</publishTime>
+    </File>
+    <File Include="bin/content/js/filters.js">
+      <publishTime>09/25/2013 19:44:08</publishTime>
+    </File>
+    <File Include="bin/content/js/services.js">
+      <publishTime>10/06/2013 14:02:20</publishTime>
+    </File>
+    <File Include="bin/content/lib/angular/angular.min.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="bin/content/lib/bootstrap/bootstrap.min.css">
+      <publishTime>09/25/2013 19:37:01</publishTime>
+    </File>
+    <File Include="bin/content/lib/bootstrap/bootstrap.min.js">
+      <publishTime>09/25/2013 19:37:01</publishTime>
+    </File>
+    <File Include="bin/Nancy.dll">
+      <publishTime>10/05/2013 15:16:49</publishTime>
+    </File>
+    <File Include="bin/Nancy.Hosting.Aspnet.dll">
+      <publishTime>10/05/2013 15:24:57</publishTime>
+    </File>
+    <File Include="bin/Nancy.Serialization.ServiceStack.dll">
+      <publishTime>10/05/2013 20:02:32</publishTime>
+    </File>
+    <File Include="bin/services.dll">
+      <publishTime>10/06/2013 19:35:06</publishTime>
+    </File>
+    <File Include="bin/ServiceStack.Text.dll">
+      <publishTime>10/05/2013 20:02:32</publishTime>
+    </File>
+    <File Include="bin/Simple.Data.Ado.dll">
+      <publishTime>10/05/2013 15:31:37</publishTime>
+    </File>
+    <File Include="bin/Simple.Data.dll">
+      <publishTime>10/05/2013 15:31:36</publishTime>
+    </File>
+    <File Include="bin/Simple.Data.SqlServer.dll">
+      <publishTime>10/05/2013 15:31:37</publishTime>
+    </File>
+    <File Include="content/css/app.css">
+      <publishTime>10/06/2013 15:13:27</publishTime>
+    </File>
+    <File Include="content/img/angry-santa.jpg">
+      <publishTime>10/06/2013 15:16:49</publishTime>
+    </File>
+    <File Include="content/img/bg.jpg">
+      <publishTime>10/06/2013 15:06:03</publishTime>
+    </File>
+    <File Include="content/img/header.png">
+      <publishTime>10/06/2013 14:58:21</publishTime>
+    </File>
+    <File Include="content/img/santa-thumbs.jpg">
+      <publishTime>10/06/2013 15:17:34</publishTime>
+    </File>
+    <File Include="content/img/santa.jpg">
+      <publishTime>10/06/2013 15:09:11</publishTime>
+    </File>
+    <File Include="content/index.html">
+      <publishTime>10/06/2013 19:28:41</publishTime>
+    </File>
+    <File Include="content/js/app.js">
+      <publishTime>09/25/2013 20:03:37</publishTime>
+    </File>
+    <File Include="content/js/controllers.js">
+      <publishTime>10/06/2013 14:02:41</publishTime>
+    </File>
+    <File Include="content/js/directives.js">
+      <publishTime>09/25/2013 19:43:52</publishTime>
+    </File>
+    <File Include="content/js/filters.js">
+      <publishTime>09/25/2013 19:44:08</publishTime>
+    </File>
+    <File Include="content/js/services.js">
+      <publishTime>10/06/2013 14:02:20</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-cookies.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-cookies.min.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-loader.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-loader.min.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-resource.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-resource.min.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-sanitize.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular-sanitize.min.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/angular.min.js">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/angular/version.txt">
+      <publishTime>09/25/2013 19:31:27</publishTime>
+    </File>
+    <File Include="content/lib/bootstrap/bootstrap.min.css">
+      <publishTime>09/25/2013 19:37:01</publishTime>
+    </File>
+    <File Include="content/lib/bootstrap/bootstrap.min.js">
+      <publishTime>09/25/2013 19:37:01</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/06/2013 15:39:55</publishTime>
+    </File>
+    <File Include="favicon.png">
+      <publishTime>10/06/2013 15:42:50</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/05/2013 20:02:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/06/2013 19:35:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

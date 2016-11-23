@@ -1,0 +1,168 @@
+/* app css stylesheet */
+@import url(http://fonts.googleapis.com/css?family=Mountains+of+Christmas:700);
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+ul.tickets
+{
+  display:inline-block;
+}
+
+ul.tickets li {
+  min-height: 300px;
+  min-width: 200px;
+  background-color: #1A3112;  
+  float: left;
+  margin: 5px;
+  list-style: none;
+  cursor: pointer;
+  color: #C5A436;
+}
+
+ul.tickets li:hover {
+  background-color: #4E9436;
+}
+
+ul.tickets li span {
+  min-height: 300px;
+  min-width: 200px;
+  line-height: 300px;
+  font-size: 90px;
+  text-align: center;
+  vertical-align: middle;
+  display:inline-block;
+}
+
+ul.tickets li:hover span
+{
+  text-shadow: 0 0 10px #EEE;
+}
+
+body {
+  background-image: url('../img/bg.jpg');
+  /*background-color: #992114 !important;*/
+}
+
+.header {
+  margin-top: 20px;
+  background-color: #C5A436;
+  width: 100%;
+  min-height: 120px;
+  line-height: 120px;
+  color:#FFF;
+  padding: 10px;  
+  background-position: center;
+  background-repeat: no-repeat;
+    text-align: center;
+}
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('../img/s1.png'), url('../img/s2.png'), url('../img/s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:-1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.header h1 {
+    height: 100px;
+    line-height: 100px;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+.section
+{
+  padding: 10px;
+  margin-top: 50px;
+  background-color: #FFF;
+  min-height: 100px;
+    z-index: 100;
+}
+
+.section.with-image
+{
+  min-height: 800px;
+}
+
+.fore {
+    z-index: 200;
+}
+
+strong {
+  color:#4E9436 !important;
+}
+
+.btn-info {
+  background-color: #4E9436 !important;
+  border-color: #C5A436 !important;
+}
+
+.error {
+    color: red;
+}
+
+.emailEntry input {
+    width: 250px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.emailEntry label {
+    display: block;
+}

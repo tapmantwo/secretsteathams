@@ -1,0 +1,13 @@
+C:\Projects\secretsanta2013\services\services\bin\services.dll
+C:\Projects\secretsanta2013\services\services\bin\services.pdb
+C:\Projects\secretsanta2013\services\services\bin\Nancy.dll
+C:\Projects\secretsanta2013\services\services\bin\Nancy.Hosting.Aspnet.dll
+C:\Projects\secretsanta2013\services\services\bin\Nancy.Serialization.ServiceStack.dll
+C:\Projects\secretsanta2013\services\services\bin\ServiceStack.Text.dll
+C:\Projects\secretsanta2013\services\services\bin\Simple.Data.Ado.dll
+C:\Projects\secretsanta2013\services\services\bin\Simple.Data.dll
+C:\Projects\secretsanta2013\services\services\bin\Simple.Data.SqlServer.dll
+C:\Projects\secretsanta2013\services\services\bin\ServiceStack.Text.xml
+C:\Projects\secretsanta2013\services\services\obj\Release\services.csprojResolveAssemblyReference.cache
+C:\Projects\secretsanta2013\services\services\obj\Release\services.dll
+C:\Projects\secretsanta2013\services\services\obj\Release\services.pdb

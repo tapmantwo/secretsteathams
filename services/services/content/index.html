@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="en" ng-app="secretSanta">
+<head>
+  <meta charset="utf-8">
+  <title>Secret Santa 2015</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+</head>
+    <body >
+        <form name="ss" ng-controller="mainController">
+            <div class="container">
+            <div id="snow"></div>
+        <div class="header">
+            <div >
+                <h1>Secret Santa 2016</h1>   
+            </div>
+        </div>
+        <div ng-show="mode == 'selectPicker'" class="section with-image">
+            <div class="col-md-3 col-sm-5">
+                <img src="./img/santa.jpg">
+            </div>
+            <div class="col-md-9 col-sm-7">
+            <h2>Step 1 - Who are you?</h2>
+                <p>Welcome to the Secret Santa Draw.  Before we get started, pick your name from the list.</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info dropdown-toggle fore" data-toggle="dropdown">
+                        I am <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ng-repeat="p in pickers" ng-click="pickerSelected(p)"><a href="#">{{p.forename + ' ' + p.lastname}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div ng-show="mode == 'email'" class="section with-image row">
+            <div class="col-md-3 col-sm-5">
+                <img src="./img/santa.jpg">
+            </div>
+            <div class="emailEntry col-md-9 col-sm-7">
+                <h2>Step 2 - Enter your email</h2>
+                <p>{{selectedPicker.forename}}, we will send you an email confirming the details of your selection.  Please enter your email address below.</p>
+                <label for="emailInput">Email</label>                       
+                <input type="email" name="emailInput" data-ng-model="emailAddress" data-ng-required="mode == 'email'"/>
+                <label for="emailConfirmInput">Confirm Email</label>          
+                <input type="email" name="emailConfirmInput" data-ng-model="emailConfirm" data-ng-required="mode == 'email'"/>
+                <ul ng-show="emailErrors.length > 0">
+                    <li ng-repeat="e in emailErrors" class="error">{{e}}</li>
+                </ul>
+                <button type="button" class="btn btn-info fore" data-ng-click="emailEntered()">Pick &gt;&gt;</button>
+            </div>
+        </div>
+        <div ng-show="mode == 'pick'" class="section">
+            <h2>Step 3 - Pick!</h2>
+            <p>Hi <strong>{{selectedPicker.forename}}</strong>! Each of the cards below represents someone in the Secret Santa draw who has not yet been picked by someone else. Pick from the <strong>{{tickets.length}}</strong> cards below.</p>
+            <ul class="tickets fore">
+                <li ng-repeat="t in tickets" ng-click="picked(t);">
+                    <span>?</span>
+                </li>          
+            </ul>
+        </div>
+        <div ng-show="mode == 'results'" class="section with-image">
+            <div class="col-md-3 col-sm-5">
+                <img src="./img/santa-thumbs.jpg">
+            </div>
+            <div class="col-md-9 col-sm-7">
+                <h2>Step 4 - Go Shopping</h2>
+                <p>Hey <strong>{{selectedPicker.forename}}</strong>, you've picked <strong>{{pickedPerson.forename + ' ' + pickedPerson.lastname}}</strong>.</p>        
+                <p>This years budget is <strong>£20</strong>.  We will exchange gifts on <strong>24th December</strong>, and this year, we'll be meeting up at <strong>Rob & Rachael's house</strong>, from 12pm.</p>
+                <p>Enjoy your gift shopping, and have a Merry Christmas</p>
+                <p>Ho Ho etc etc...</p>
+                <em>This information should have reached you by email - please check your spam folders.  The message would have come from santa@mrsteacakes.com.  If you have any problems, get in touch with Richard or Kate.</em>
+            </div>
+        </div>
+        <div ng-show="mode == 'alreadyPicked'" class="section with-image">
+            <div class="col-md-3 col-sm-5">
+                <img src="./img/angry-santa.jpg">
+            </div>
+            <div class="col-md-9 col-sm-7">
+                <h2>Ah!</h2>
+                <p>Sorry <strong>{{selectedPicker.forename}}</strong>, you've already picked!  We can't display who you got here, so if you want to find out, you can resend your confirmation email by clicking the button below.</p>
+                <button ng-click="resendEmail()" class="fore">Resend</button>
+                <div data-ng-show="resentEmailAddress.length > 0">
+                    Your confirmation email has been reset to {{resentEmailAddress}}.  
+                    If it has not arrived, first check your spam folders - the email will come from santa@mrsteacakes.com.  Otherwise you can send an email to <a href="mailto:tapmantwo@gmail.com" subject="Secret Santa Draw">Richard</a> and he'll get the information you need.
+                </div>
+            </div>
+        </div>
+        </form>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+  <script src="lib/bootstrap/bootstrap.min.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-resource.min.js"></script>
+    <script src="lib/angular/angular-sanitize.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
